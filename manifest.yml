@@ -1,0 +1,8 @@
+---
+applications:
+- name: ruby-searchgov
+  random-route: false
+  buildpacks:
+    - apt_buildpack
+    - ruby_buildpack
+  memory: 512MB

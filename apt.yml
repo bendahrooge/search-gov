@@ -1,0 +1,8 @@
+---
+packages:
+- gcc
+- protobuf
+- java
+- imagemagick
+- mysql@5.7
+- v8
