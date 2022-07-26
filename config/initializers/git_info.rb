@@ -10,7 +10,7 @@ if git_info.length > 0
 end
 
 system_name = ::File.read(::File.join(Rails.root, 'config', 'system_name.txt')) rescue nil
-show_header = system_name.present?
+show_header = system_name.present? || Rails.env.development?
 
 UsasearchGitInfo = Struct.new(:sha, :refs, :system_name, :show_header)
 $git_info = UsasearchGitInfo.new(git_sha, git_refs, system_name, show_header)
